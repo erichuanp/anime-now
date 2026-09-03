@@ -45,6 +45,8 @@
 
 沒有帳號，沒有伺服器。請求從手機直接發往 Bangumi、Tavily 和你選擇的服務商。設定留在應用自己的目錄裡，API Key 加密儲存且與裝置綁定。不收集資料。
 
+使用番時鏡像即表示同意：查番時輸入的關鍵字、bangumi 使用者名稱和你的 IP 會經過作者的伺服器，作者可以看到。換回官方或填自己的鏡像即可避免。Tavily 和 LLM 的請求不經過鏡像，它們的隱私問題請詢問對應的服務商。
+
 ## 下載
 
 [Releases](https://github.com/erichuanp/anime-now/releases)。Android 6.0 以上，多數手機用 `arm64-v8a`。
