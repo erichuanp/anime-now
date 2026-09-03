@@ -60,7 +60,7 @@ Supports Volcengine (Doubao), DeepSeek, Alibaba Model Studio (Qwen), OpenAI, Ant
 ## Privacy
 
 - No account, no server. Requests go straight from your phone to Bangumi, Tavily and the LLM provider you chose.
-- Settings live in `Documents/AnimeNow/` on the phone and survive uninstall and reinstall.
+- Settings stay in the app's own folder with no storage permission; the anime list can be backed up to Download in one tap.
 - API keys are stored AES-256-GCM encrypted with a device-bound key; they cannot be decrypted on another phone.
 - Nothing is collected.
 
@@ -72,7 +72,7 @@ APKs for every architecture are on the [Releases](https://github.com/erichuanp/a
 
 ## Status
 
-Version 1.0.0. The source is not public yet.
+Version 2026.9.3.0. The source is not public yet.
 
 ## Credits
 
