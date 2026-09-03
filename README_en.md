@@ -43,17 +43,19 @@ DeepSeek, Alibaba DashScope, Volcengine, OpenAI, Anthropic, and any OpenAI-compa
 
 ## Privacy
 
-No account, no server. Requests go from the phone straight to Bangumi, Tavily and the provider you choose. Settings stay in the app's own directory; API keys are encrypted and bound to the device. Nothing is collected.
+No account, no server. Requests go from your device straight to Bangumi, Tavily and the provider you choose. Settings stay in the app's own directory; API keys are encrypted and bound to the device. Nothing is collected.
 
 Using the Anime Now mirror means agreeing that the keywords you search, the bangumi usernames you enter and your IP pass through the author's server, where the author can see them. Switch back to the official source, or point the app at your own mirror, to avoid this. Tavily and LLM requests never go through the mirror; ask those providers about their own privacy terms.
 
 ## Download
 
-[Releases](https://github.com/erichuanp/anime-now/releases). Android 6.0+, most phones want `arm64-v8a`.
+[Releases](https://github.com/erichuanp/anime-now/releases). Android 6.0+, most phones want `arm64-v8a`; macOS 12+ takes the `.dmg`.
+
+The macOS build is unsigned: right-click the icon and choose Open the first time.
 
 ## Status
 
-Version 2026.9.3.0. The source is not public yet.
+Version 2026.9.3.1. The source is not public yet.
 
 ## Credits
 

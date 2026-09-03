@@ -47,19 +47,21 @@ bgm.tv 在中国大陆访问不畅，可以在设置里切换到镜像。
 
 ## 隐私
 
-没有账号，没有服务器。请求从手机直接发往 Bangumi、Tavily 和你选择的服务商。配置留在应用自己的目录里，API Key 加密存储且与设备绑定。不收集数据。
+没有账号，没有服务器。请求从本机直接发往 Bangumi、Tavily 和你选择的服务商。配置留在应用自己的目录里，API Key 加密存储且与设备绑定。不收集数据。
 
 使用番时镜像即表示同意：查番时输入的关键词、bangumi 用户名和你的 IP 会经过作者的服务器，作者可以看到。换回官方或填自己的镜像即可避免。Tavily 和 LLM 的请求不经过镜像，它们的隐私问题请询问对应的服务商。
 
 ## 下载
 
-[Releases](https://github.com/erichuanp/anime-now/releases)。Android 6.0 以上，多数手机用 `arm64-v8a`。
+[Releases](https://github.com/erichuanp/anime-now/releases)。Android 6.0 以上，多数手机用 `arm64-v8a`；macOS 12 以上用 `.dmg`。
+
+macOS 版没有签名，首次打开要右键点图标选「打开」。
 
 国内镜像：https://pan.baidu.com/s/14nsJyfoU7zXK87wYOexpjQ?pwd=2333 提取码 2333
 
 ## 状态
 
-2026.9.3.0 版。源码暂未公开。
+2026.9.3.1 版。源码暂未公开。
 
 ## 致谢
 
