@@ -57,7 +57,7 @@ The macOS build is unsigned: right-click the icon and choose Open the first time
 
 ## Status
 
-Version 2026.9.3.1. The source is public.
+Version 2026.9.8.0. The source is public.
 
 ## Credits
 

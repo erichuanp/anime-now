@@ -66,7 +66,7 @@ Future<void> main() async {
 }
 
 /// Keep in sync with pubspec.yaml `version` (YYYY.M.D+N → YYYY.M.D.N).
-const appVersion = '2026.9.3.1';
+const appVersion = '2026.9.8.0';
 
 class AppColors {
   static const seed = Color(0xFFF48FB1);
