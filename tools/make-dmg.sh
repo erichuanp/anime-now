@@ -13,6 +13,15 @@ out="dist/anime-now-$version-macos.dmg"
 
 [ -d "$app" ] || { echo "run: flutter build macos --release" >&2; exit 1; }
 
+# The script packs whatever is already in build/, so a stale build would ship
+# under the new version number without a word. Refuse instead.
+short=$(defaults read "$PWD/$app/Contents/Info.plist" CFBundleShortVersionString)
+want=${version%.*}
+[ "$short" = "$want" ] || {
+  echo "built app is $short but pubspec says $want — run: flutter build macos --release" >&2
+  exit 1
+}
+
 work=$(mktemp -d)
 trap 'rm -rf "$work"' EXIT
 swift tools/dmg-background.swift "$work/background.png"
