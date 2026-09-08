@@ -1,0 +1,76 @@
+<div align="center">
+
+<img src="docs/icon.png" width="96" alt="番时" />
+
+# 番时
+
+只关心正在放送的番剧。
+
+**简体中文** · [繁體中文](README_zh-Hant.md) · [English](README_en.md)
+
+<br/>
+
+<img src="docs/screenshots/home.png" width="200" alt="番剧" />&nbsp;&nbsp;&nbsp;
+<img src="docs/screenshots/search.png" width="200" alt="查番" />&nbsp;&nbsp;&nbsp;
+<img src="docs/screenshots/settings.png" width="200" alt="设置" />
+
+</div>
+
+<br/>
+
+## 关于
+
+输入一个关键词，得到一张卡片：番名、首播日期、每周的放送时间和平台。
+
+首页按星期排列，今天在最上面。时间换算成你所在的时区，星期也随之重新归类。到点可以收到通知。
+
+## 原理
+
+```
+关键词  →  Bangumi  →  Tavily 搜索  →  LLM 整理  →  卡片
+```
+
+放送时间没有现成的接口，靠搜索加大语言模型整理，所以需要自备两个 key。
+
+## 准备
+
+| | 用途 | 免费额度 |
+|---|---|---|
+| Tavily API Key | 网页搜索 | 每月 1000 次 |
+| LLM API Key | 整理放送表 | 视服务商而定 |
+
+支持 DeepSeek、阿里云百炼、火山引擎、OpenAI、Anthropic，以及任何 OpenAI 兼容接口。设置页里有 Tavily 的注册教程。
+
+bgm.tv 在中国大陆访问不畅，可以在设置里切换到镜像。
+注：本APP提供的镜像可能会在不久的将来被墙，如果某天使用不了了请不用惊讶，我随缘补。
+请各位尽可能科学上网使用本APP。
+
+## 隐私
+
+没有账号，没有服务器。请求从本机直接发往 Bangumi、Tavily 和你选择的服务商。配置留在应用自己的目录里，API Key 加密存储且与设备绑定。不收集数据。
+
+加密用的密钥由设备标识派生，挡的是「config.json 被单独拷走」；能读你整台设备的人一样解得开，别把它当保险箱。
+
+使用番时镜像即表示同意：查番时输入的关键词和 bangumi 用户名会经过作者的服务器，作者可以看到。你的 IP 只用来算每日配额，服务器存的是加盐哈希而不是地址本身，访问日志里也不记录客户端地址。换回官方或填自己的镜像即可避免。Tavily 和 LLM 的请求不经过镜像，它们的隐私问题请询问对应的服务商。
+
+## 下载
+
+[Releases](https://github.com/erichuanp/anime-now/releases)。Android 6.0 以上，多数手机用 `arm64-v8a`；macOS 12 以上用 `.dmg`。
+
+macOS 版没有签名，首次打开要右键点图标选「打开」。
+
+国内镜像：https://pan.baidu.com/s/14nsJyfoU7zXK87wYOexpjQ?pwd=2333 提取码 2333
+
+## 状态
+
+2026.9.3.1 版。源码已公开。
+
+## 致谢
+
+数据来自 [Bangumi 番组计划](https://bgm.tv)，搜索由 [Tavily](https://tavily.com) 提供。
+
+<br/>
+
+<div align="center">
+<sub>MIT License · © 2026 erichuanp</sub>
+</div>

@@ -1,0 +1,15 @@
+[Unit]
+Description=Anime Now Bangumi proxy (queue / quota / LFU cache)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+EnvironmentFile=-/etc/default/bgmproxy
+ExecStart=/usr/bin/python3 /opt/bgmproxy/bgmproxy.py
+Restart=always
+RestartSec=2
+KillSignal=SIGTERM
+TimeoutStopSec=15
+
+[Install]
+WantedBy=multi-user.target
